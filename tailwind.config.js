@@ -1,32 +1,24 @@
+/**
+ * @type {import('tailwindcss').Config}
+ */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{ts,tsx,js,jsx}"
-  ],
+  darkMode: 'class', // Enable dark mode
   theme: {
     extend: {
       colors: {
-        graphite: "#202225",
-        red: {
-          DEFAULT: "#B70C1C",
-          dark: "#8A0813",
-        },
-        light: {
-          DEFAULT: "#FAFAFA",
-          gray: "#F2F3F5"
-        }
+        'dark-graphite': '#2C2C2C', // Dark graphite color
+        'deep-red': '#A00000', // Deep red accent
       },
       fontFamily: {
-        headline: ['Oswald', 'Inter', 'sans-serif'],
-        body: ['Lato', 'Open Sans', 'sans-serif']
+        'poppins': ['Poppins', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
-      boxShadow: {
-        'elegant': '0 8px 32px rgba(60,60,60,0.18)',
-      },
-      borderRadius: {
-        'xl': '1.1rem',
-      }
+    },
+  },
+  variants: {
+    extend: {
+      // Add variant configurations if needed
     },
   },
   plugins: [],
-}
+};
